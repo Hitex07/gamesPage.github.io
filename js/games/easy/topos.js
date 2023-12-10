@@ -34,6 +34,8 @@ function start(condition) {
     
             clearTimeout(cronometro);
 
+            document.getElementById("topos-stats-time").innerHTML = `Tiempo: ${contador}'s`;
+
             contador = 30;
     
         };
