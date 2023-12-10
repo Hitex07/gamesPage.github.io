@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,400&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    font-family: "Roboto Mono";
+
+}
+
+body{
+
+    background: url(https://images.unsplash.com/photo-1633421878925-ac220d8f6e4f?auto=format&fit=crop&q=80&w=1760&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-attachment: fixed;
+
+}
+
+.logo{
+
+    height: 100%;
+
+}
+
+#nav-header{
+
+    height: 75px;
+
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    & *{
+
+        color: white;
+
+    }
+
+    box-shadow: -1px 5px 11px rgba(255, 255, 255, 0.5);
+
+    & #sections{
+
+        margin: 5px;
+
+    }
+
+}
+
+.main-container{
+
+    color: white;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+
+
+
+}
+
+.game-links-container{
+
+    width: 100%;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+
+    & .game-link{
+
+        margin: 5px;
+
+        padding: 2.5px;
+
+        width: 150px;
+        height: 150px;
+
+        color: white;
+
+        background: red;
+
+        border-radius: 10px;
+
+    }
+}
+
+/*.news-item{
+
+    
+
+}*/
+
+.about-container{
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    & h2{
+
+        text-shadow: 2.5px 2.5px 1px black;
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        margin: 25px;
+
+        color: white;
+
+    }
+
+}
+
+
+
+/*
+::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}*/
+
+// Juegos
+
+    // Topos
+
+    #body-topos{
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        & #topos-control-panel{
+
+            margin: 10px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: row;
+
+            & button{
+
+                margin: 10px;
+
+                width: 100px;
+                height: 50px;
+    
+                font-size: 20px;
+                font-family: 'Roboto Mono';
+    
+                border-radius: 5px;
+    
+                box-shadow: 0 0 12.5px rgba(255, 255, 255, 0.8);
+    
+            }
+    
+            & #topos-stats-time{
+    
+                margin: 10px;
+    
+                display: flex;
+    
+                justify-content: center;
+                align-items: center;
+    
+                background-color: white;
+    
+                width: 100px;
+                height: 50px;
+    
+                font-size: 20px;
+                font-family: 'Roboto Mono';
+    
+                border-radius: 5px;
+    
+                box-shadow: 0 0 12.5px rgba(255, 255, 255, 0.8);
+    
+            }        
+            
+            & #topos-stats-points{
+    
+                margin: 10px;
+    
+                display: flex;
+    
+                justify-content: center;
+                align-items: center;
+    
+                background-color: white;
+    
+                width: 100px;
+                height: 50px;
+    
+                font-size: 20px;
+                font-family: 'Roboto Mono';
+    
+                border-radius: 5px;
+    
+                box-shadow: 0 0 12.5px rgba(255, 255, 255, 0.8);
+    
+            }
+
+        }
+    
+        & #tablero-topos{
+
+            display: flex;
+
+            flex-direction: row;
+
+            background-image: url("../media/plank.png");
+
+            & .topos{
+
+                display: flex;
+
+                flex-direction: column;
+
+                & .pozo-topo{
+
+                    margin: 2.5px;
+
+                    width: 180px;
+                    height: 180px;
+
+                    background-image: url("../media/pozo-topo.png");
+
+                }
+
+                & .topo{
+
+                    margin: 2.5px;
+
+                    width: 180px;
+                    height: 180px;
+
+                    background-image: url("../media/topo.png");
+
+                }
+
+                & .golpe-topo{
+
+                    margin: 2.5px;
+
+                    width: 180px;
+                    height: 180px;
+
+                    background-image: url("../media/topo-golpe-martillo.png");
+                    background-size: contain;
+
+                }
+
+            }
+
+        }
+
+    }

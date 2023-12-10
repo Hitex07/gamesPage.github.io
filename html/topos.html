@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topos</title>
+    <script src="../js/games/easy/topos.js" async></script>
+    <link rel="stylesheet" href="../sass/styles.css" />
+  </head>
+  <body id="body-topos">
+
+    <div id="topos-control-panel">
+
+      <button id="topos-button" onclick="start(0)">Empezar</button>
+
+      <h2 id="topos-stats-time">Tiempo: 30's</h2>
+
+      <h2 id="topos-stats-points">Puntaje: 0</h2>
+
+    </div>
+
+    <div id="tablero-topos">
+      <div class="topos">
+        <article onclick="check(/*id_value = */ 1)" id="1" class="pozo-topo"></article>
+
+        <article onclick="check(/*id_value = */ 2)" id="2" class="pozo-topo"></article>
+
+        <article onclick="check(/*id_value = */ 3)" id="3" class="pozo-topo"></article>
+      </div>
+
+      <div class="topos">
+        <article onclick="check(/*id_value = */ 4)" id="4" class="pozo-topo"></article>
+
+        <article onclick="check(/*id_value = */ 5)" id="5" class="pozo-topo"></article>
+
+        <article onclick="check(/*id_value = */ 6)" id="6" class="pozo-topo"></article>
+      </div>
+
+      <div class="topos">
+        <article onclick="check(/*id_value = */ 7)" id="7" class="pozo-topo"></article>
+
+        <article onclick="check(/*id_value = */ 8)" id="8" class="pozo-topo"></article>
+
+        <article onclick="check(/*id_value = */ 9)" id="9" class="pozo-topo"></article>
+      </div>
+    </div>
+  </body>
+</html>
